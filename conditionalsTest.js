@@ -2,20 +2,18 @@
 function firstRepeat(strVal) {
     let str = strVal;
     let seen = [];
-    let firstLetter, secondLetter;
 
     for(let i = 0; i< str.length; i++) {
         if(! seen.includes(str[i])){
             seen.push(str[i]);
-            console.log(seen);
         }
         else{
-            console.log(seem.includes(str[i]));
+            return str[i];
         }
     }
-    (firstLetter === secondLetter)? console.log(firstLetter + ' 1st') : console.log(secondLetter + ' 2nd');
+    return -1;
 }
-firstRepeat('Isildur');
+console.log(firstRepeat('Isiildur'));
 
 // Q2. JavaScript Program to Check Whether a Number is Palindrome or Not? Using operators
 
