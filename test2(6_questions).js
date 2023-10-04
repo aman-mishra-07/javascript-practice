@@ -37,7 +37,7 @@
 //         }
 //         else{
 //             indexes[letter].push(idx);
-//         }
+//         }   
 //     });
 //     return indexes;
 
@@ -47,17 +47,17 @@
 
 // // Q4. Create a function that gets the name of the piece of jewelry with the highest price and returns "The most expensive one is the {name of jewelry piece}".
 
-// function mostExpensive(val) {
-//     let price = Object.values(val); // array of price 
+function mostExpensive(val) {
+    let price = Object.values(val); // array of price 
     
-//     let expensive = price.reduce((a,b) => Math.max(a,b)); // finding maximum value of array price
+    let expensive = price.reduce((a,b) => Math.max(a,b)); // finding maximum value of array price
     
-//     let expensiveKey = (obj, value) =>{ return Object.keys(obj).find((key) => obj[key] === value)}; //function of finding key of expensive price
+    let expensiveKey = (obj, value) =>{ return Object.keys(obj).find((item) => obj[item] === value)}; //function of finding key of expensive price
 
-//     return `The most expensive one is the ${expensiveKey(val, expensive)}`;
-// }
-// let jewelryProducts = {'Gold Watch':400, 'Diamond Earrings':980, 'Pearl Necklace':4650 };
-// console.log(mostExpensive(jewelryProducts));
+    return `The most expensive one is the ${expensiveKey(val, expensive)}`;
+}
+let jewelryProducts = {'Gold Watch':400, 'Diamond Earrings':980, 'Pearl Necklace':4650 };
+console.log(mostExpensive(jewelryProducts));
 
 
 // // Q5. Create a function that takes one, two or more numbers as arguments and adds them together to get a new number. The function then repeatedly multiplies the digits of the new number by each other, yielding a new number, until the product is only 1 digit long. Return the final product.
@@ -80,7 +80,7 @@
 // // Q6. Create a function that takes an array of names in the format "First Name Last Name" (e.g. "SIMRAN kAUR"), and returns an array of these names sorted by the length of their last names. If the length of multiple last names are the same, then proceed to sort alphabetically by last name.
 
 // let userNmes = ['simran kaur', 'shivam rajput' , 'karan aujla' , 'deep kaur']
-
+5
 // function compareStrings(a,b) {
 //     if (a < b) return -1;
 //     if (a > b) return 1;
@@ -98,12 +98,9 @@
 // }
 // console.log(userNmes.sort(compare));
 
-let arr = [1,2,3,4,5,6,7];
-arr.map((elem) => {
-    if(elem === 3){
-        // continue;
-    }
-    else{
-        console.log(elem);
-    }
-})
+let arr = [9,8,7,5, '80',7,3,4, , , , ,6]
+
+console.log(arr.sort());
+function arrSort(){
+
+}
