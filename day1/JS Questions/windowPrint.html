@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Print Function</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .nav{
+            padding: 10px 0px;
+            background: #000;
+            color: white;
+        }
+        .flex{
+            display: flex;
+            justify-items: center;
+            gap: 20px;
+        }
+        ul{
+            list-style: none;
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        main{
+            padding: 30px 60px;
+            height: 80vh;
+            color: white;
+            background-image: url('https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        h1,p{
+            font-size: 4vh;
+        }
+        button{
+            padding: 10px;
+            font-size: 20px;
+            /* font-weight: bold; */
+            background: #000;
+            color : white ;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="flex item-center gap-4">
+            <li><a href="#">home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact US</a></li>
+        </ul>
+    </nav>
+    <main >
+        <h1>Hello Guys</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, suscipit illo pariatur enim tempora inventore voluptatum quidem recusandae eos consectetur et, unde est maiores sequi fugiat nisi quas officiis accusamus consequatur cupiditate quod quibusdam velit? Repudiandae, reprehenderit voluptatibus? Ex a, inventore dolores enim, saepe quae dolore deserunt voluptatibus recusandae consequuntur sed molestiae reiciendis nemo asperiores, cum eos nam totam delectus rem provident rerum explicabo! Possimus repudiandae mollitia explicabo eligendi odio sed iure minima eaque, dicta dolores asperiores perspiciatis. Eveniet ut excepturi dolorum ratione veritatis veniam inventore, dolore iste quas perferendis aspernatur sequi suscipit quis pariatur a voluptates amet dolorem eaque!</p>
+        
+        <button type="button" onclick="pagePrint()">Print This Page</button>
+    </main>
+    <script>
+        function pagePrint() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
